@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/gold_medal"
+        android:orderInCategory="100"
+        android:title="@string/gold_medal"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/trophy"
+        android:orderInCategory="100"
+        android:title="@string/trophy"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/thumbs_up"
+        android:orderInCategory="100"
+        android:title="@string/thumbs_up"
+        app:showAsAction="never" />
+</menu>

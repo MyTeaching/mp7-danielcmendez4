@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareActivity">
+
+    <EditText
+        android:id="@+id/getPhoneNum_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendMsg_btn"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:autofillHints=""
+        android:hint="@string/enter_the_number_of_your_phone"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+    <Button
+        android:id="@+id/makeCall_btn"
+        android:layout_toEndOf="@id/getPhoneNum_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sendMsg_btn"
+        android:layout_centerVertical="true"
+        android:text="@string/txt_makeCall_btn"/>
+
+    <Button
+        android:id="@+id/sendMsg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/makeCall_btn"
+        android:layout_above="@id/search_btn"
+        android:text="@string/txt_sendMsg_txt"/>
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/makeCall_btn"
+        android:layout_toEndOf="@id/getPhoneNum_editText"
+        android:layout_centerVertical="true"
+        android:text="@string/nearby_basketball"/>
+
+</RelativeLayout>

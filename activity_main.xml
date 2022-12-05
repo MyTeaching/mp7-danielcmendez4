@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/basketball"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/one_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/teal_700"
+        android:padding="@dimen/norm_padding"
+        android:text="@string/txt_one_btn"
+        android:textColor="#CFD8DC"
+        android:textSize="@dimen/norm_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_teamOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one_btn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="@dimen/norm_text" />
+
+    <TextView
+        android:id="@+id/textView_teamTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/two_btn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="@dimen/norm_text" />
+
+    <Button
+        android:id="@+id/two_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/txt_two_btn"
+        android:textColor="@android:color/white"
+        android:padding="@dimen/norm_padding"
+        android:textSize="@dimen/norm_text"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>
